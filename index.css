@@ -4,7 +4,7 @@
 }
 body {
   font-size: 1.2rem;
-  background-color: beige;
+  background-color: #2e2e2e;
 }
 
 .article-header {
@@ -27,9 +27,8 @@ body {
   border-radius: 7px;
 }
 
-
 header {
-  background-color: white;
+  background-color: teal;
   border-bottom: 1px solid teal;
   grid-area: header;
   padding: 0 65px;
@@ -48,7 +47,6 @@ header li {
 
 #title {
   display: inline-block;
-  background-color: teal;
   color: white;
   padding: 7px 15px;
 }
@@ -65,10 +63,10 @@ footer {
   display: grid;
   grid-template-columns: 50px 1fr 1fr 50px;
   grid-template-rows: auto 1fr 1fr 1fr 1fr 50px;
-  grid-gap: 15px;
-  grid-template-areas: 
-    "header header header header" 
-    ". card1 . ." 
+  grid-gap: 20px;
+  grid-template-areas:
+    "header header header header"
+    ". card1 . ."
     ". card1 card2 ."
     ". card3 card2 ."
     ". card3 . ."
@@ -76,21 +74,32 @@ footer {
   min-height: 100vh;
 }
 
-.card1{
+.card1 {
   grid-area: card1;
+  box-shadow: 5px 5px 5px red;
+  color: firebrick;
 }
 
 .card2 {
   grid-area: card2;
+  box-shadow: 5px 5px 5px green;
+  color: forestgreen;
 }
 
 .card3 {
   grid-area: card3;
+  box-shadow: 5px 5px 5px blue;
+  color: darkblue;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
 }
 
 ul {
